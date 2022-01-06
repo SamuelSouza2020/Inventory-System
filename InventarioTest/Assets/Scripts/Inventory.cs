@@ -14,6 +14,13 @@ public class Inventory : MonoBehaviour
     }
     public void DropItem(GameObject button)
     {
+        if(mouseItem != null)
+        {
+            //usar a variavel auxiliar para trocar os botoes
+            Transform aux = mouseItem.transform.parent;
 
+            mouseItem.transform.SetParent(button.transform.parent);
+            button.transform.SetParent(aux);
+        }
     }
 }
