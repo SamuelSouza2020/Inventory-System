@@ -32,24 +32,26 @@ public class Inventory : MonoBehaviour
     }
     public void ConsumeItem()
     {
-        //mouseItem.SetActive(false);
-
-        //Verificar o objeto consumido e subtrair
-        for(int a = 0; a < 6; a++)
+        if(UIManager.instance.pyMoney > 0)
         {
-            if(item[a].id == mouseItem.name)
+            //Verificar o objeto consumido e subtrair
+            for (int a = 0; a < 6; a++)
             {
-                Debug.Log(mouseItem.name);
-                item[a].quantidade--;
-                UIManager.instance.pyLife += item[a].iLife;
-                UIManager.instance.pyPower += item[a].iPower;
-                UIManager.instance.pyMoney += item[a].iGold;
-                UIManager.instance.pyShild  += item[a].iShild;
-                if(item[a].quantidade < 1)
+                if (item[a].id == mouseItem.name)
                 {
-                    mouseItem.SetActive(false);
+                    Debug.Log(mouseItem.name);
+                    item[a].quantidade--;
+                    UIManager.instance.pyMoney--;
+                    UIManager.instance.pyLife += item[a].iLife;
+                    UIManager.instance.pyPower += item[a].iPower;
+                    UIManager.instance.pyMoney += item[a].iGold;
+                    UIManager.instance.pyShild += item[a].iShild;
+                    if (item[a].quantidade < 1)
+                    {
+                        mouseItem.SetActive(false);
+                    }
+                    break;
                 }
-                break;
             }
         }
     }
