@@ -41,6 +41,10 @@ public class Inventory : MonoBehaviour
             {
                 Debug.Log(mouseItem.name);
                 item[a].quantidade--;
+                UIManager.instance.pyLife += item[a].iLife;
+                UIManager.instance.pyPower += item[a].iPower;
+                UIManager.instance.pyMoney += item[a].iGold;
+                UIManager.instance.pyShild  += item[a].iShild;
                 if(item[a].quantidade < 1)
                 {
                     mouseItem.SetActive(false);
