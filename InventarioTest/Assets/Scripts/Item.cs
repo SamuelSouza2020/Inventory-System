@@ -6,6 +6,7 @@ using UnityEngine;
 public class Item
 {
     public string id;
+    public int quantidade;
     public int iAttack;
     public int iLife;
     public int iGold;

@@ -504,7 +504,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 709132005}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 776109571}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: ClickItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 709131998}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &709132005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,6 +688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item:
   - id: pLife
+    quantidade: 3
     iAttack: 0
     iLife: 50
     iGold: 0
@@ -684,6 +697,7 @@ MonoBehaviour:
     iIce: 0
     iImage: {fileID: 21300000, guid: 0dcff5ddc9f30a746aef6f6d8ad4f392, type: 3}
   - id: pMagic
+    quantidade: 3
     iAttack: 50
     iLife: 0
     iGold: 0
@@ -692,6 +706,7 @@ MonoBehaviour:
     iIce: 0
     iImage: {fileID: 21300000, guid: 353f9f38e15abcd45b93ac6f5edd6977, type: 3}
   - id: pGold
+    quantidade: 3
     iAttack: 0
     iLife: 0
     iGold: 50
@@ -700,6 +715,7 @@ MonoBehaviour:
     iIce: 0
     iImage: {fileID: 21300000, guid: ba1518c46492ca047894291577d1bfbf, type: 3}
   - id: pPower
+    quantidade: 0
     iAttack: 0
     iLife: 0
     iGold: 0
@@ -708,6 +724,7 @@ MonoBehaviour:
     iIce: 0
     iImage: {fileID: 21300000, guid: f95f84afb771df24fb2a79373fd9c3f6, type: 3}
   - id: pShild
+    quantidade: 3
     iAttack: 0
     iLife: 0
     iGold: 0
@@ -716,6 +733,7 @@ MonoBehaviour:
     iIce: 0
     iImage: {fileID: 21300000, guid: d58e5d3cb6ec003478c17c34ad48b6ee, type: 3}
   - id: pIce
+    quantidade: 3
     iAttack: 0
     iLife: 0
     iGold: 0
@@ -1226,7 +1244,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1097993108}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 776109571}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: ClickItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1097993104}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1097993108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1632,7 +1662,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1169942501}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 776109571}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: ClickItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1169942494}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1169942501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1982,7 +2024,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1454315230}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 776109571}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: ClickItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1454315223}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1454315230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2033,7 +2087,7 @@ GameObject:
   - component: {fileID: 1474765323}
   - component: {fileID: 1474765322}
   m_Layer: 5
-  m_Name: Slot6 (1)
+  m_Name: Use
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2109,7 +2163,6 @@ GameObject:
   - component: {fileID: 1645402614}
   - component: {fileID: 1645402613}
   - component: {fileID: 1645402612}
-  - component: {fileID: 1645402611}
   - component: {fileID: 1645402610}
   - component: {fileID: 1645402609}
   - component: {fileID: 1645402608}
@@ -2191,102 +2244,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 5
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 776109571}
-          m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
-          m_MethodName: DragItem
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1645402606}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1645402611}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1645402609}
-          m_TargetAssemblyTypeName: UnityEngine.Canvas, UnityEngine
-          m_MethodName: set_sortingOrder
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 4
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1645402611}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1645402609}
-          m_TargetAssemblyTypeName: UnityEngine.Canvas, UnityEngine
-          m_MethodName: set_sortingOrder
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 5
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
   - eventID: 6
     callback:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 776109571}
           m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
-          m_MethodName: DropItem
-          m_Mode: 2
+          m_MethodName: ConsumeItem
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 1645402606}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 1
+            m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1645402611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645402606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27e1934bf34c368489b11463f69c9258, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1645402612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2330,7 +2303,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1645402613}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 776109571}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: ConsumeItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1645402613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2683,7 +2668,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1741078242}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 776109571}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: ClickItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1741078235}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1741078242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3033,7 +3030,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2122914019}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 776109571}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: ClickItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2122914012}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2122914019
 MonoBehaviour:
   m_ObjectHideFlags: 0

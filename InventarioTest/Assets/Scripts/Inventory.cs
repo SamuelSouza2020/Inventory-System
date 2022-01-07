@@ -14,6 +14,10 @@ public class Inventory : MonoBehaviour
         mouseItem = button;
         mouseItem.transform.position = Input.mousePosition;
     }
+    public void ClickItem(GameObject button)
+    {
+        mouseItem = button;
+    }
     public void DropItem(GameObject button)
     {
         if(mouseItem != null)
@@ -24,5 +28,10 @@ public class Inventory : MonoBehaviour
             mouseItem.transform.SetParent(button.transform.parent);
             button.transform.SetParent(aux);
         }
+    }
+    public void ConsumeItem()
+    {
+        mouseItem.SetActive(false);
+        Debug.Log(mouseItem.name);
     }
 }
