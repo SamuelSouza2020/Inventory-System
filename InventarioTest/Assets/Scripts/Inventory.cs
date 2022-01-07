@@ -41,6 +41,10 @@ public class Inventory : MonoBehaviour
             {
                 Debug.Log(mouseItem.name);
                 item[a].quantidade--;
+                if(item[a].quantidade < 1)
+                {
+                    mouseItem.SetActive(false);
+                }
                 break;
             }
         }
