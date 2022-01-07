@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
 
     public GameObject mouseItem;
 
+
     public void DragItem(GameObject button)
     {
         mouseItem = button;
@@ -31,7 +32,17 @@ public class Inventory : MonoBehaviour
     }
     public void ConsumeItem()
     {
-        mouseItem.SetActive(false);
-        Debug.Log(mouseItem.name);
+        //mouseItem.SetActive(false);
+
+        //Verificar o objeto consumido e subtrair
+        for(int a = 0; a < 6; a++)
+        {
+            if(item[a].id == mouseItem.name)
+            {
+                Debug.Log(mouseItem.name);
+                item[a].quantidade--;
+                break;
+            }
+        }
     }
 }
