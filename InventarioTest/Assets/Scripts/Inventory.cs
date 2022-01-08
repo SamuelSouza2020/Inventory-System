@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
@@ -9,14 +10,29 @@ public class Inventory : MonoBehaviour
     //test
     public GameObject[] slot;
 
+    public GameObject[] txtSlot;
+
+    public Text[] txtSQ;
+
     public GameObject mouseItem;
     int cont = 0;
 
     private void Start()
     {
         slot = new GameObject[6];
+        txtSlot = new GameObject[6];
+        txtSQ = new Text[6];
         for(int x = 1; x < 7; x++)
+        {
             slot[cont = x - 1] = GameObject.Find("Slot" + x);
+            txtSlot[cont = x - 1] = slot[cont = x - 1].transform.GetChild(0).transform.GetChild(0).gameObject;
+            txtSQ[cont = x - 1] = txtSlot[cont].GetComponent<Text>();
+        }
+    }
+    private void Update()
+    {
+        for(int x = 1; x < 7; x++)
+            txtSQ[cont = x - 1].text = item[cont = x - 1].quantidade.ToString();
     }
     public void DragItem(GameObject button)
     {
