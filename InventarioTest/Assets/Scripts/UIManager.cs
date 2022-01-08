@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     //py = player
-    public int pyLife, pyMoney, pyPower, pyShild;
+    public int pyLife, pyMoney, pyRes, pyPower, pyShild;
     [SerializeField]
     Text tLife, tMoney, tPower, tShild;
     public Button compra;

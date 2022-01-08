@@ -9,7 +9,7 @@ public class Item
     public int quantidade;
     public int iAttack;
     public int iLife;
-    public int iGold;
+    public int iRes;
     public int iPower;
     public int iShild;
     public int iIce;
