@@ -14,6 +14,7 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
+        slot = new GameObject[6];
         for(int x = 1; x < 7; x++)
             slot[cont = x - 1] = GameObject.Find("Slot" + x);
     }
