@@ -33,7 +33,7 @@ public class UIManager : MonoBehaviour
         tShild = GameObject.Find("ShildP").GetComponent<Text>();
         tPower = GameObject.Find("PowerP").GetComponent<Text>();
 
-        compra = GameObject.Find("Compra").GetComponent<Button>();
+        compra = GameObject.Find("UsarItem").GetComponent<Button>();
 
         pyLife = 10;
         pyMoney = 5;
