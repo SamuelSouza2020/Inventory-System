@@ -17,3 +17,10 @@ public class Item
     public int iIce;
     public Sprite iImage;
 }
+[System.Serializable]
+public class LojaItem
+{
+    public string id;
+    public int iValor;
+
+}
