@@ -3632,7 +3632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.63246876, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -732, y: 1.5}
+  m_AnchoredPosition: {x: -791, y: -0.5397949}
   m_SizeDelta: {x: -17.9291, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &776109571
@@ -3708,6 +3708,7 @@ MonoBehaviour:
     iShild: 0
     iIce: 50
     iImage: {fileID: 21300000, guid: c87e0919bc8a65e4384e3ba862473627, type: 3}
+  lojaItem: []
   mouseItem: {fileID: 0}
 --- !u!1 &778611579
 GameObject:
@@ -6750,7 +6751,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.28646874, y: 0.8201667}
   m_AnchorMax: {x: 0.5696874, y: 0.94861114}
-  m_AnchoredPosition: {x: -226, y: 35.164}
+  m_AnchoredPosition: {x: -294.16, y: 35.164}
   m_SizeDelta: {x: -2.5800781, y: 1.5924988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1265119845
@@ -6917,6 +6918,7 @@ MonoBehaviour:
     iShild: 0
     iIce: 50
     iImage: {fileID: 21300000, guid: c87e0919bc8a65e4384e3ba862473627, type: 3}
+  lojaItem: []
   mouseItem: {fileID: 0}
 --- !u!1 &1406892641
 GameObject:
