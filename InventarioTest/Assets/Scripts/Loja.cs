@@ -31,10 +31,13 @@ public class Loja : MonoBehaviour
         if (mouseItem != null)
         {
             //usar a variavel auxiliar para trocar os botoes
-            Transform aux = mouseItem.transform.parent;
+            /*Transform aux = mouseItem.transform.parent;
 
             mouseItem.transform.SetParent(button.transform.parent);
-            button.transform.SetParent(aux);
+            button.transform.SetParent(aux);*/
+
+            UIManager.instance.vendese.speed = -0.5f;
+            UIManager.instance.vendese.Play("VenderAnim");
         }
     }
     public void ConsumeItem()

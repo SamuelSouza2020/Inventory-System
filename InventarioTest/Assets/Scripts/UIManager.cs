@@ -12,6 +12,8 @@ public class UIManager : MonoBehaviour
     Text tLife, tMoney, tPower, tShild;
     public Button compra;
 
+    public Animator vendese;
+
     public static UIManager instance;
 
     private void Awake()
@@ -34,6 +36,8 @@ public class UIManager : MonoBehaviour
         tPower = GameObject.Find("PowerP").GetComponent<Text>();
 
         compra = GameObject.Find("UsarItem").GetComponent<Button>();
+
+        vendese = GameObject.Find("VendItem").GetComponent<Animator>();
 
         pyLife = 10;
         pyMoney = 5;
